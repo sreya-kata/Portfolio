@@ -1,0 +1,51 @@
+
+/*if the viewport is equal to 340px or less*/
+@media only screen and (max-width:340px){
+    .heading .main-menu .navbar,
+    .heading .main-menu .navbar .navbar-brand,
+    .site-main .skills-area{
+        padding: 4%;
+        margin: 0%
+    }
+
+    .site-main .site-banner .site-title h1{
+        font-size: 41px;
+    }
+
+    .site-main > .skills-area .skills{
+        width: 13rem;
+    }
+}
+
+
+/*if the viewport is equal to 792px or less*/
+@media only screen and (max-width:792px){
+    .site-main .about-area .about-title h2 > span{
+        font-size: 31px;
+        letter-spacing: 10px;
+    }
+
+    .site-main .project-area .button-group button{
+        font: normal 500 18px/40px var(--roboto);
+    }
+
+    .site-main .fun-facts .facts-title p{
+        padding: 0%;
+    }
+}
+
+/*if the viewport is equal to 1910 or less*/
+@media only screen and (max-width:1910px){
+    .heading .main-menu .navbar{
+        padding: 1rem;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+    .site-main .skills-area .skills-title,
+    .site-main .fun-facts{
+        padding: 3% 4%;
+    }
+}

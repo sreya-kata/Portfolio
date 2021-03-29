@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Playlist Curator</title>
+  <link rel="icon" href="/img/logo1.png">
+  <!--Bootstrap css file -->
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!--font icons -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!---Owl carousel css file-->
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
+  <!---responsive css file-->
+  <link rel="stylesheet" href="/css/responsive.css">
+  <!---icons---->
+  <script src="https://kit.fontawesome.com/3057080845.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header class="heading">
+    <div class="main-menu">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#"><img src="/img/logo1.png" alt="logo1"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="http://sreyakata.com/index.html#projects">Back</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+  <!--------------------About Area------------------------->
+  <section class="about-area" id="aboot">
+    <div class="container-fluid" style="padding-left: 100px;">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 about-title">
+          <h2 class="text-uppercase">
+            <span>Covid-19 Vaccine Waste Tracker</span>
+          </h2>
+          <div class="paragraph py-4 w-75">
+            <p class="para">Upon attending <a href="https://hackbeanpot.com/" target="_blank"
+              class="a-underline">HackBeanpot</a> I joined a team of 3 other Northeastern students. We dedicated the weekend towards creating an application that helps hospitals and other COVID-19 vaccine distribution centers to record and report vaccines that are wasted. This project was manifested as a result of the CDC reporting that many vaccines are going to waste, but there not being any concerted effort to track the waste.
+            </p>
+            <p class="para">
+              The web application has three main components: the dashboard, login, and data entry page. The dashboard shows a table of top ten most "wasteful" counties (with the option to reverse the ordering). The graph on this page shows a daily tracker of the total number of vaccines wasted. The login page is a way od addressing security issues and administrative privileges. Lastly, if a successful login was entered, a data entry page comes into play with inputs for the hospital, county, date, and number of vaccines entered. This data, once submitted, is added to a database.
+            </p>
+            <p class="para">
+              Using full-stack development principles, this project takes advantage of React components and API calls to a Java Sprint Boot backend server that is connected to a local SQL database.
+            </p>
+          </div>
+          <div class="site-buttons"></div>
+          <div class="d-flex flex-row flex-wrap">
+            <a href="https://github.com/elainaphalen/HPB2021">
+              <button type="button" class="btn button primary-button mr-4 text-uppercase">Github Code</button>
+            </a>
+            <a href="https://devpost.com/software/covid-19-vaccine-waste-tracker?">
+              <button type="button" class="btn button secondary-button mr-4 text-uppercase">DevPost</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="about-image">
+            <img src="https://i.imgur.com/Nuk1PWk.jpg" alt="covid" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------------End About Area------------------------->
+
+  <!---------------------Start Fun Facts Area---------------------->
+  <section class="fun-facts">
+    <div class="container carousel">
+      <div class="owl-carousel owl-theme">
+        <div class="fact row">
+          <div class="col-lg-4 col-md-12 fact-img">
+            <img src="https://i.imgur.com/HC1OimB.jpeg" alt="multi" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-12 about-fact">
+            <h4 class="text-uppercase">Git</h4>
+            <p class="para">Git version control was taken full advantage of for this project as well all worked remotely and were not able to work as personally. Branches were committed to the GitHub to ensure minimum merge conflicts and pull requests were analyze thoroughly. I was able to utilize Git to its fullest potential here.
+            </p>
+          </div>
+        </div>
+        <div class="fact row">
+          <div class="col-lg-4 col-md-12 fact-img">
+            <img src="https://i.imgur.com/7OVD0Tk.jpg" alt="query" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-12 about-fact">
+            <h4 class="text-uppercase">Spring Boot and SQL</h4>
+            <p class="para">The Java Spring Boot code called various SQL queries in many of its methods. Each method correlates to a different API endpoint for <b>GET</b> and <b>POST</b> requests. JSON values are added within these methods as well.
+            </p>
+          </div>
+        </div>
+        <div class="fact row">
+          <div class="col-lg-4 col-md-12 fact-img">
+            <img src="https://i.imgur.com/ICQnulT.jpg" alt="patient" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-12 about-fact">
+            <h4 class="text-uppercase">What's Next?</h4>
+            <p class="para">This project originally had 3 use cases in idea formation: hospitals, patients, and government officially. While our final product played more on the administrative side of things, we hope to add some patient portal aspect to allow patients to locate the nearest vaccine center correlated with waste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer-area" id="contact">
+    <div class="container">
+      <div class="">
+        <div class="site-logo text-center py-4">
+          <a href="#"><img src="/img/logo1.png" alt="logo"></a>
+        </div>
+        <div class="social text-center">
+          <h5 class="text-uppercase">Contact Me</h5>
+          <a href="https://www.linkedin.com/in/sreya-kata-289034190/"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:sreya.kata@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.facebook.com/sreya.katabathuni.33"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/sreya-kata"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyrights text-center">
+          <p class="para">
+            © Sreya Katabathuni 2021 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/jquery.3.4.1.js"></script>
+  <!--Bootstrap js file -->
+  <script src="/js/bootstrap.min.js"></script>
+  <!--Isotope JS file-->
+  <script src="/vendor/isotope/isotope.min.js"></script>
+  <!--Magnific Popup script file-->
+  <script src="/vendor/Magnific-Popup/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+  <!--Owl Carousel js file-->
+  <script src="/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <!--custon js file-->
+  <script src="/js/main.js"></script>
+  
+</body>
+</html>
