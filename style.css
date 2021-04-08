@@ -2,10 +2,10 @@
 @import url(fonts.css);
 
 /*css variables*/
-@import url(_variables.css);
+@import url(variables.css);
 
 /*global styling*/
-@import url(_global.css);
+@import url(global.css);
 
 /*start navigation*/
 .heading .main-menu .navbar .navbar-brand {
