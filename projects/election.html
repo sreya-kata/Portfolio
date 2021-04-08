@@ -7,6 +7,11 @@
   <link rel="icon" href="/img/logo1.png">
   <!--Bootstrap css file -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!--font icons -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!---Owl carousel css file-->
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <!--fonts-->
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
@@ -44,31 +49,27 @@
       <div class="row">
         <div class="col-lg-6 col-md-12">
           <div class="about-image">
-            <img src="https://i.imgur.com/ymnAic7.png" alt="bakery" class="img-fluid">
+            <img src="https://i.imgur.com/Zaxwzzr.png" alt="election" class="img-fluid">
           </div>
         </div>
         <div class="col-lg-6 col-md-12 about-title">
           <h2 class="text-uppercase">
-            <span>Bakery Website</span>
+            <span>2024 Election Results</span>
           </h2>
           <div class="paragraph py-4 w-75">
-            <p class="para">As my second website project (following this one!), I wanted to incorporate more JavaScript functionality. This website uses sticky navigation, a moving carousel, and multiple counters. 
+            <p class="para">As my final project for data science, I teamed up with another classmate to produce a model that could predict county-level results for the upcoming presidential election, based on demographics. 
             </p>
             <p class="para">
-              In the future, I hope to add back-end capabilities to this website and implement features like a mailing list, real-time shopping and inventory tracking, and a database to connect to.
+              We followed a pipeline that consisted of getting the data (largely from CSVs-Github for election data and census-related data for demographics), cleaning (extracting only relevant information from each CSV and then merging them into one dataframe), and doing the machine learning (we chose to use regression to estimate the proportion/votes for each party).
             </p>
             <p class="para">
-              This project was a deeper delve into front-end development and, as such, makes use of HTML/CSS/JS with added
-              animation libraries.
+              This project was a deeper delve into data science and machine learning concepts like regression analysis and predictions. We used the sklearn library to do our analytics and pandas to deal with dataframes.
             </p>
           </div>
           <div class="site-buttons"></div>
           <div class="d-flex flex-row flex-wrap">
-            <a href="https://github.com/sreya-kata/bakery-website">
+            <a href="https://github.com/sreya-kata/DS3000_Final_Project">
               <button type="button" class="btn button primary-button mr-4 text-uppercase">Github Code</button>
-            </a>
-            <a href="https://sreya-kata.github.io/bakery-website/">
-              <button type="button" class="btn button secondary-button mr-4 text-uppercase">Live</button>
             </a>
           </div>
         </div>
@@ -77,6 +78,37 @@
   </section>
 
   <!--------------------End About Area------------------------->
+
+   <!--------------------End About Area------------------------->
+
+  <!---------------------Start Fun Facts Area---------------------->
+  <section class="fun-facts">
+    <div class="container carousel">
+      <div class="owl-carousel owl-theme">
+        <div class="fact row">
+          <div class="col-lg-4 col-md-12 fact-img">
+            <img src="https://i.imgur.com/Yx8aHLs.jpg" alt="heatmap" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-12 about-fact">
+            <h4 class="text-uppercase">Heatmap</h4>
+            <p class="para">We produced several plots in our analyses of the data. One significant one involved a seaborn heat/correlation map to plot relationships between various demographic features (for example: college graduation rate and % democratic vote).
+            </p>
+          </div>
+        </div>
+        <div class="fact row">
+          <div class="col-lg-4 col-md-12 fact-img">
+            <img src="https://i.imgur.com/KZ5v6ww.jpg" alt="demo" class="img-fluid">
+          </div>
+          <div class="col-lg-8 col-md-12 about-fact">
+            <h4 class="text-uppercase">Demographic Significance</h4>
+            <p class="para">Our initial idea invovled prediction election results purely from prior election results for a county. However, we wanted to incorporate demographic data so we revised our scope to focus on using demographic data to predict votes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
   <footer class="footer-area" id="contact">
@@ -107,6 +139,10 @@
   <script src="/js/bootstrap.min.js"></script>
   <!--Isotope JS file-->
   <script src="/vendor/isotope/isotope.min.js"></script>
+  <!--Magnific Popup script file-->
+  <script src="/vendor/Magnific-Popup/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+  <!--Owl Carousel js file-->
+  <script src="/vendor/owl-carousel/js/owl.carousel.min.js"></script>
   <!--custon js file-->
   <script src="/js/main.js"></script>
   

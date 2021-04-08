@@ -7,6 +7,11 @@
   <link rel="icon" href="/img/logo1.png">
   <!--Bootstrap css file -->
   <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <!--font icons -->
+  <link rel="stylesheet" href="/css/all.min.css">
+  <!---Owl carousel css file-->
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="/vendor/owl-carousel/css/owl.theme.default.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <!--fonts-->
   <link href="https://fonts.googleapis.com/css?family=Lato|Roboto&display=swap" rel="stylesheet">
@@ -38,30 +43,86 @@
   </header>
 
   <main class="site-main">
-  <!--------------------About Area------------------------->
-  <section class="about-area" id="aboot">
-    <div class="container-fluid" style="padding-left: 100px;">
-      <div class="row">
-        <div class="col-lg-6 col-md-12">
-        </div>
-        <div class="col-lg-6 col-md-12 about-title">
-          <h2 class="text-uppercase">
-            <span>ViTAL</span>
-          </h2>
-          <div class="paragraph py-4 w-75">
-            <p class="para"><a href="https://vitalneu.wixsite.com/vital" target="_blank"
-              class="a-underline">ViTAL</a> is the only Northeastern student organization that is devoted to healthcare innovation in an era of unconvential career paths and growing technology. As such, its appearance needs to embody this. My team at <a href="https://scout.camd.northeastern.edu/" target="_blank"
-              class="a-underline">Scout</a> was tasked with redesigning both their brand and website. This is a semester-long project that requires a great deal of research.
-            </p>
-            <p class="para">Coming soon</p>
+    <!--------------------About Area------------------------->
+    <section class="about-area" id="aboot">
+      <div class="container-fluid" style="padding-left: 100px;">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 about-title">
+            <h2 class="text-uppercase">
+              <span>ViTAL</span>
+            </h2>
+            <div class="paragraph py-4 w-75">
+              <p class="para"><a href="https://vitalneu.wixsite.com/vital" target="_blank"
+                class="a-underline">ViTAL</a> is the only Northeastern student organization that is devoted to healthcare innovation in an era of unconvential career paths and growing technology. As such, its appearance needs to embody this. My team at <a href="https://scout.camd.northeastern.edu/" target="_blank"
+                class="a-underline">Scout</a> was tasked with redesigning both their brand and website. This is a semester-long project that requires a great deal of research.
+              </p>
+              <p class="para">
+                We first did feature analysis and user stories to understand what functionality and information would be present on their website. We decided on developing a homepage, about, team, events, and opportunities pages for them. My co-developer and I split up the pages but reconvened whenever we needed to work together.
+              </p>
+              <p class="para">
+                Using React with Gatsby as a static site generator, we made a fully-functioning website for ViTAL. They can update the content as they would like in the Contentful CMS.
+              </p>
+            </div>
+            <div class="site-buttons"></div>
+            <div class="d-flex flex-row flex-wrap">
+              <a href="https://github.com/Scout-NU/vital-site">
+                <button type="button" class="btn button primary-button mr-4 text-uppercase">Github Code</button>
+              </a>
+              <a href="#">
+                <button type="button" class="btn button secondary-button mr-4 text-uppercase">Website Coming Soon</button>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <div class="about-image">
+              <img src="https://i.imgur.com/gIkQacJ.png" alt="vital" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!--------------------End About Area------------------------->
-  </main>
+    </section>
+  
+    <!--------------------End About Area------------------------->
+  
+    <!---------------------Start Fun Facts Area---------------------->
+    <section class="fun-facts">
+      <div class="container carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="fact row">
+            <div class="col-lg-4 col-md-12 fact-img">
+              <img src="https://i.imgur.com/8XHpcpt.jpeg" alt="github" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-fact">
+              <h4 class="text-uppercase">Github</h4>
+              <p class="para">We worked in weekly sprints with constant feedback from both the client and the tech director. Pull requests would go through both the co-developer as well as the tech director for any needed changes.
+              </p>
+            </div>
+          </div>
+          <div class="fact row">
+            <div class="col-lg-4 col-md-12 fact-img">
+              <img src="https://i.imgur.com/2Wn0gNW.jpeg" alt="notion" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-fact">
+              <h4 class="text-uppercase">Notion</h4>
+              <p class="para">As part of the agile workflow, documentation and resources were kept on Notion, a note and document sharing platform. We used this to manage cross-functional communication and to look back on later.
+              </p>
+            </div>
+          </div>
+          <div class="fact row">
+            <div class="col-lg-4 col-md-12 fact-img">
+              <img src="https://i.imgur.com/B6J4CTh.jpg" alt="design" class="img-fluid">
+            </div>
+            <div class="col-lg-8 col-md-12 about-fact">
+              <h4 class="text-uppercase">Design</h4>
+              <p class="para">Working with a team of designers, we used the wireframes they created to base our development off of. The final design strategy alluded moods of informative and clean, expressing a very cool-centered color scheme and layout.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    </main>
 
   <footer class="footer-area" id="contact">
     <div class="container">
@@ -85,12 +146,16 @@
       </div>
     </div>
   </footer>
-
+  
   <script src="/js/jquery.3.4.1.js"></script>
   <!--Bootstrap js file -->
   <script src="/js/bootstrap.min.js"></script>
   <!--Isotope JS file-->
   <script src="/vendor/isotope/isotope.min.js"></script>
+  <!--Magnific Popup script file-->
+  <script src="/vendor/Magnific-Popup/Magnific-Popup-master/dist/jquery.magnific-popup.min.js"></script>
+  <!--Owl Carousel js file-->
+  <script src="/vendor/owl-carousel/js/owl.carousel.min.js"></script>
   <!--custon js file-->
   <script src="/js/main.js"></script>
   
